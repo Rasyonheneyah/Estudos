@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkolivegreen;
+        }
+        header{
+            background-color: greenyellow;
+            padding: 10px;
+            margin: 10px;
+            border-radius:20px 1px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin:10px;
+
+        }
+        article{
+            background-color: lightgreen;
+            padding: 5px;
+        }
+        aside>aside{
+            background-color: rgb(66, 119, 66);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        nav{
+            background-color: gray;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+        }
+        nav>a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        footer>p{
+            margin:0;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">a</a>
+            <a href="#">a</a>
+            <a href="#">a</a>
+            <a href="#">a</a>
+        </nav>
+    </header>
+    <main>
+        <section id="tempo">
+            <article>Previsão do Tempo</article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea animi, mollitia ducimus iure beatae doloremque corporis quaerat iusto nemo iste tempora, voluptatem quo explicabo harum quos reprehenderit, minus veritatis obcaecati.</p>
+            <aside>Eu denovo</aside>
+        </section>
+        <section id="assuntos">
+            <article>Noticia sobre o Brasil</article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quo quam culpa quisquam! Dolorem, commodi quos quibusdam atque aliquid possimus quidem laborum, reprehenderit, beatae necessitatibus nesciunt ex animi porro numquam?</p>
+            <aside>Eu</aside>
+        </section>
+    </main>
+    <footer>
+        <div id="bola"></div>
+        <p>Site construído pelo Rasyon Heneyah</p>
+    </footer>
+<body>
+</html>
