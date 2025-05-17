@@ -43,6 +43,7 @@ def comprar():
         if compras== "Fim":
             flag=False
         else:
+            
             listacompras.append(compras)
     print(*listacompras, sep="; ")        
 
@@ -54,7 +55,7 @@ def verif():
     produto=input("Insira o nome para a verificação: ")
     qtd= len(lista)
     for i in range(5):
-        if lista[i]==produto:
+        if lista[i] in produto:
             print("O produto está disponível!")
 
         else:
@@ -62,4 +63,18 @@ def verif():
     if c==5:
         print("O Produto não está disponível.")
 
+#6
+def contagem():
+    flag= True
+    while flag:
+        compras=input("Insira o item: ")
+        if compras== "Fim":
+            flag=False
+        else:
+            n= len(compras)
+            
+            if compras[i] in compras:
+                 pass   
+            listacompras.append(compras)
+    print(*listacompras, sep="; ")    
 verif()
