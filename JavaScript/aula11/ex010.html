@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #painel{
+            height: fit-content;
+            gap: 10px;
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: ;
+            
+        }
+    
+        h1{
+            margin: 10px;
+
+        }
+        body{
+            margin: 0 10px;
+        }
+
+        .heart {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      background: rgb(0, 0, 0);
+      transform: rotate(-45deg);
+      margin: 50px auto;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: rgb(0, 0, 0);
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <div id="painel">
+        <input type="number" name="txtvel" id="txtvel" ><p>Km/h</p>
+        <input type="button" value="Verificar" onclick="calcular()">
+    </div>
+
+    <div id="res">
+
+    </div>
+
+      <!--<div class="heart"></div> -->
+
+
+    <script>
+        function calcular(){
+            var txtv = window.document.getElementById(`txtvel`) 
+            var vel = Number(txtv.value)
+            var res = document.getElementById("res")
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong>!</p>`
+            if (vel>60){
+                res.innerHTML += ` <p>MULTADO POR EXCESSO DE VELOCIDADE!</p>`
+            }else{
+                res.innerHTML += `<p>Continue na velocidade permitida! </p>`
+            }
+            
+            res.innerHTML += `<p> Dirija sempre com cinto de segurança! </p>`
+        }
+    </script>
+</body>
+</html>
