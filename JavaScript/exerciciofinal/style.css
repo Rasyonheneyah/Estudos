@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(122, 191, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+header{
+         margin: 20px auto;
+         text-align: center;
+         font-size: 220%;
+
+}
+h1{
+    color: white;
+}
+
+
+
+
+div{
+    text-align: center;
+    padding: 8px;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.192);
+}
+footer{
+    font-style: italic;
+    text-align: center;
+}
+
+select{
+    width: 250px ;
+    height: 250px;
+}
+
+option{
+    margin: 2px auto;
+    border: 0.1px solid gray;
+    width: 230px;
+
+}

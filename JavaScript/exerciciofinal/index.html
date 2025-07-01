@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <!-- Números de 1 a 100
+     - Não ser possível finalizar qnd n tiver nenhum caractere 
+     - Não ser possível colocar caractere igual ou fora daquele escopo. X
+     O resultado deve dizer:
+        - Total de números
+        - Maior valor
+        - Menor valor
+        - Soma de todos os números
+        - Média dos valores digitados
+     
+    -->
+    <section>
+        <div>
+            <p>
+                Número (entre 1 e 100) <input type="number" name="txtn" id="txtn"> <input type="button" value="Adicionar" onclick="adicionar()"></input>
+
+            </p>
+            <p>
+               <select size="10" name="listan" id="listan">
+                    <option value="fraseinicial">Adicione um número</option>
+               </select>
+
+            </p>
+
+            <p>
+                <input type="button" value="Finalizar" onclick="finalizar()" name="finalizar" id="finalizar" >
+                <input type="button" value="Zerar Lista" id="zerar" name="zerar" onclick="zerar()">
+            </p>
+        </div>
+        <div id="res">
+            
+            
+        </div>
+    </section>
+
+    <footer>
+        <P>&copy;  Rasyon</P>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
