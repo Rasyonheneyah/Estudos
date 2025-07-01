@@ -3,17 +3,19 @@ let iteradorl = 0
 let lisn = document.getElementById(`listan`)
 let num = document.getElementById(`txtn`)
 let res = document.getElementById(`res`)
-let acionado = 0
+let acionado = 0 // para quando o finalizar estiver ativado
 
 lisn.innerText = ``
 
 function adicionar() {
 
+    // Verificar se o número está entre 1 e 100, e que tenha um número
     if (num.length == 0 || num.value < 1 || num.value > 100 ) {
         alert(`Insira um número válido!`)
         return
     }
 
+    // Proibir números repetidos
     for (let i in numeros) {
         if (num.value == numeros[i]) {
             alert(`Não coloque um número repetido!`)   
@@ -26,6 +28,11 @@ function adicionar() {
     item.value = `listan${iteradorl}`
     lisn.appendChild(item)
     numeros.push(Number(num.value))
+
+    // Resetar quando a pessoa já tiver acionado o finalizar() e clicar novamente em adicionar algum número
+    if (acionado == 1) {
+        res.innerHTML = ""
+    }
     
 }
 
@@ -61,6 +68,8 @@ function media() {
     let media = somas/numeros.length
     return media
 }
+
+// Zerar o conteúdo
 function zerar() {
     numeros = []
     lisn.innerText = ""
@@ -68,6 +77,8 @@ function zerar() {
     acionado = 0
 }
 
+
+// Finalizar 
 function finalizar() {
     if (numeros.length == 0) {
         alert('Adicione números à lista antes de finalizar.')
@@ -89,7 +100,9 @@ function finalizar() {
         let med = media()
         res.innerHTML += `<p>A média de todos os números enviados é de ${med}.</p>`
         
-        acionado = 1 
+        acionado = 1 // 1 = ativado, 0 = desativado (como um valor booleano)
+
+    // Impedir de spamar o finalizar
     } else if (acionado = 1){
         alert(`Você precisa zerar para finalizar novamente.`)
     }
