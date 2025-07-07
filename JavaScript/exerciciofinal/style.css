@@ -48,3 +48,9 @@ option{
     width: 230px;
 
 }
+
+@media (max-width: 550px) {
+    section{
+        width: 80%;
+    }
+}
