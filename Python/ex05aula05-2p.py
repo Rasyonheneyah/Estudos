@@ -29,6 +29,6 @@ for nome, nota in valores:
     media = sum(nota)/len(nota)
     print(nome)
     if (media>=7):
-        print( 'Aprovado', end='')
+        print( 'Aprovado')
     else:
         print('reprovado')

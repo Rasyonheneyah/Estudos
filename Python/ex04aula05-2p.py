@@ -11,5 +11,5 @@ def dtr(n):
     print(f'Dobro: {n*2}')
     print(f'Triplo: {n*3}')
     print(f'Raíz quadrada: {n**0.5}')
-    print(sqrt(n))
+    print(math.sqrt(n))
 n1 = dtr(int(input('Insira um número: ')))

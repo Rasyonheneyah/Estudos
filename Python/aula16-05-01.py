@@ -19,8 +19,9 @@ def lista():
     refrigerante= 15.00
     pao= 8.50
     listapreco=[arroz, cafe, ovos, refrigerante, pao]
+    n= len(lista)
     print("Num |      Produto     |   Preço em R$   ")
-    for i in range (5):
+    for i in range (n):
         print(i+1,"  | ", lista[i], "   |     " ,listapreco[i])
 #1    
 def calc():
@@ -74,7 +75,11 @@ def contagem():
             n= len(compras)
             
             if compras[i] in compras:
-                 pass   
-            listacompras.append(compras)
+                 for compras[i] in range(n):
+                     if compras[i]==0:
+                         pass
+                     
+            else:
+                listacompras.append(compras)
     print(*listacompras, sep="; ")    
 verif()
