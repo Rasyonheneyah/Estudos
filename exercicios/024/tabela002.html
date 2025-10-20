@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes!</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            height: 200px;
+
+            position: relative;
+        }
+        thead> tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(122, 122, 122);
+        }
+        caption{
+            font-weight: 900;
+            background-color: rgba(128, 128, 128, 0.363);
+            padding: 5px;
+        }
+        thead, tfoot{
+            background-color: rgb(122, 122, 122);
+            color: white;
+        }
+
+        tbody>tr:nth-child(2n){
+            background-color: rgb(214, 214, 214);
+        }
+        td, th{
+
+            border: 1px solid black;
+            padding:5px;
+        }
+        .num{
+            text-align: center;
+            font-family: monospace;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Tabelas Maiores</h2>
+
+    <!--
+        ANATOMIA TABELAS GRANDES
+        TABLE 
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    
+    -->
+    <table>
+        <caption>População do Sudeste</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46 081 801</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 223 547</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 393 441</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4 126 854</td>
+            </tr>
+            <!--
+            
+            
+            
+            -->
+
+
+            
+
+        </tbody>
+        <tfoot>
+            <tr>
+            
+                <th>Total de Habitantes</th>
+                <th scope="row" class="num">88 825 643</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum alias tempore placeat nulla iure obcaecati atque esse non? Possimus ipsa dolores aliquam cum libero cupiditate commodi a aperiam similique voluptatum?</span><span>Qui, doloremque voluptas. Saepe et, veniam incidunt dicta corporis at est a commodi asperiores distinctio, praesentium sed beatae rerum. Quisquam qui earum debitis, tempora excepturi animi voluptatibus nihil corrupti autem!</span><span>Voluptates ducimus debitis ad iste sit, a consequuntur numquam veritatis soluta est sed, ullam esse deleniti vitae iusto aut ab optio molestiae iure aliquam omnis natus magnam. Repellat, non dicta!</span><span>Non, tempore delectus numquam quidem totam aliquid! Libero, id architecto dolores perferendis maxime esse reiciendis nemo <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> nisi, ipsum quidem veniam beatae sequi itaque aperiam voluptatibus sapiente nam repellendus facere nobis!</span><span>Explicabo, doloremque! Voluptatem magnam quam veniam. Consequuntur commodi nostrum, cumque minus, impedit voluptatibus ducimus hic unde ratione tempore magnam ex, cum nisi aliquid! Totam quia quidem, eveniet minima quam expedita?</span><span>Facilis ducimus, optio minus ipsum provident veniam animi laborum quis odit sequi minima fugit voluptatem, officia nemo aliquid corporis illo assumenda esse quisquam? Voluptatibus inventore deleniti maxime eum non aliquid?</span><span>Quia nostrum consectetur sunt voluptatibus facere soluta culpa exercitationem aut, veniam rerum repellendus a accusantium iste delectus beatae consequuntur eligendi non ipsum magni pariatur repudiandae dicta inventore possimus. Dolorum, natus.</span><span>At quia voluptates laudantium repellat aliquid consequatur doloribus, expedita itaque modi dolorem quod cumque libero dolores reprehenderit architecto sit exercitationem nemo adipisci hic et dignissimos eius ad. Explicabo, dolorem cum!</span><span>Doloribus dicta porro enim eligendi minus harum et sequi. Animi, cumque totam repellendus, incidunt libero ullam dolorem sunt harum nisi esse autem! Molestias tempora sunt debitis quos quod assumenda expedita?</span><span>Architecto id quia aperiam excepturi dolor maxime eum ratione, exercitationem cumque, nihil hic officiis dolorum, eius repellendus nesciunt dicta laboriosam libero commodi sit non reprehenderit? Ut fuga pariatur natus minus.</span></p>
+
+
+</body>
+</html>

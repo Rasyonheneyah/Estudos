@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .tittab{
+            color: white;
+            background-color: rgba(128, 128, 128, 0.781);
+        }
+        td.num{
+            text-align: center;
+        }
+        th.left{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Boletim Escolar 1º Bimestre</caption>
+        <thead>
+            <tr class="tittab">
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr class="tittab">
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="4"><strong>Exatas</strong></td>
+
+                <td>Matemática</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+            </tr>
+            <tr class="tittab">
+                <th class="left" scope="row" colspan="4">Média de Exatas</th>
+                <td class="num">10.0</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><strong>Humanas</strong></td>
+                <td>História</td>
+
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+                <td class="num">10.0</td>
+            </tr>
+
+            <tr class="tittab">
+                <th class="left" scope="row" colspan="4">Média de Humanas</th>
+                <td class="num">10.0</td>
+            </tr>
+            
+        </tbody>
+
+    </table>
+
+</body>
+</html>
