@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste e Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.json" method="POST" autocomplete="on">
+        <p>
+            <label for="iuser">
+                Usuário:
+            </label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" size="10" placeholder="Nome..." autocomplete="username">
+        </p>
+
+        <p>
+            <label for="isenha">
+                Senha
+            </label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="12" placeholder="Senha..." autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+</body>
+</html>

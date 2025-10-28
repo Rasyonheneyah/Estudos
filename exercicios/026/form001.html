@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: bisque;
+        }
+        h1{
+            text-align: center;
+        }
+        input[type='text']{
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.199);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Meu Primeiro Formulário</h1>
+
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <P>
+            <label for="inome">Nome:</label> 
+            <input type="text" id="inome" name="nome">
+        </P>
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" id="isobrenome" name="sobrenome"> 
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+
+    <!--    Name != Id
+        Todo objeto de entrada precisa de um name.
+        Submit não precisa necessariamente porque só envia os dados para o action.    
+
+        Label é importante para o navegador e mecanismos de buscas compreenderem a relação entre o Campo e o Nome do Campo
+    -->
+
+
+    <!--
+    Dois Métodos de Enviar Dados 
+    Padrão - GET
+        Aparece no LINK
+        Praticidade, informações não sensíveis
+        Pode ser Compartilhada com aquela busca
+        URL Compartilhável
+        Você só pode enviar até 3000 Bytes (aprox. 3000 letras)
+        Campos não sensíveis
+        Não pode fotos ou do tipo
+    POST - 
+        Não mostra na cara, mas o usuário pode achar no inspecionar elemento
+        Dados Sensíveis (aprenda HTTPS PRA PROTEGER DADOS)
+        Não quer que apareçam na URL
+        Dados tenham mais de 3000 bytes
+        ENvios de Arquivos, 
+
+    -->
+
+</body>
+</html>
