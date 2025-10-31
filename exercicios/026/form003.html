@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(189, 253, 232);
+        }
+        main{
+            background-color: white;
+            padding: 15px;
+            border-radius: 7%;
+        }
+        h1{
+            padding: 20px;
+
+        }
+        p{
+            padding: 7.5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Formulário</h1>
+        <form method="get" action="cadastro.html" autocomplete="on">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required value="7">
+                <!--Value tira o placeholder-->
+            </p>
+            <p>
+                <label for="imes">Mês</label>
+                <input type="month" name="mes" id="imes" required value="2020-07">
+            </p>
+            <p>
+                <label for="idia">Dia da Prova</label>
+                <input type="date" name="dia" id="idia" required >
+            </p>
+            <p>
+                <label for="ihora">Horário da Prova</label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+</body>
+</html>
