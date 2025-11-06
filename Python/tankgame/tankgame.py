@@ -3,8 +3,8 @@ from tank import Tank
 tanks = {
     # Key: Value
     'a': Tank('Misael'),
-    'b': Tank('Brendo'),
-    'c': Tank('André')    
+    'b': Tank('Luca'),
+    'c': Tank('Apolo')    
 }
 
 players = len(tanks)
