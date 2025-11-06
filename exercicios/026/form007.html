@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Ex de FOrmulário</h1>
+    <form action="cadastro.json" method="post" autocomplete="on">
+
+        <div>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+
+                <option selected value="">-- Escolha --</option>
+
+                <optgroup label="Regiao Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option>Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </div>
+
+
+        <div>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Admnistrador</option>
+                <option>Contabilidade</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+                <option>Youtuber</option>
+            </datalist>
+        </div>
+
+
+        <div>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="20" rows="8" maxlength="10"></textarea>
+            <!--Não é o máximo de linha e coluna, textarea é infinito
+            Ideal é também colocar método POST, pq o GET tem limite de BYTES-->
+        </div>
+
+        <div>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </div>
+    </form>
+</body>
+</html>

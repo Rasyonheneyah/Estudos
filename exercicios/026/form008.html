@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário de Exemplo</h1>
+    <form action="" method="get">
+        <div>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="n1" id="in1" max="50" min 0 required oninput="atualizarSoma()">
+        </div>
+        <div>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" max="50" min 0 required oninput="atualizarSoma()">
+        </div>
+
+
+        <div>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">
+                0
+            </output>
+            <!-- O OUTPUT NÃO ENVIA NADA, só serve pra exibir na tela/mostrar na tela!-->
+        </div>
+
+
+        <div>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+
+    <script>
+        function atualizarSoma(){
+            const n1 = Number(window.document.getElementById(`in1`).value)
+            const n2 = Number(window.document.getElementById(`in2`).value)
+            const soma = window.document.getElementById(`isoma`)
+            soma.textContent =  n1+n2
+        }
+    </script>
+</body>
+</html>

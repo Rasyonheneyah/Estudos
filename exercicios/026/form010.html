@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário de Exemplo</h1>
+    <form action="cadastro.json" method="post">
+        
+        <div>
+            <label for="iano">Em que Ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2025" value="">
+        </div>
+
+        <div>
+            <label for="iidade">Sua idade é: </label>
+            <output name="idade" id="iidade">
+
+            </output>
+        </div>
+        <div>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+
+    <script>
+        
+        function exibirIdade(){
+            const ano = new Date().getFullYear()
+            const nasceu = Number(document.querySelector(`#iano`).value)
+            const mostrarIdade = document.querySelector(`#iidade`)
+
+            mostrarIdade.textContent = ano - nasceu
+        }
+
+        document.getElementById(`iano`).addEventListener("input", exibirIdade)
+    </script>
+</body>
+</html>

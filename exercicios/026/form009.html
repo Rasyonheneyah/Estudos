@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário de Exemplo</h1>
+    <form action="cadastro.json" method="get">
+        <div>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" min="0 " max="100">
+            <output id="ival" >
+
+            </output>
+        </div>
+        
+
+        <div>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+
+    <script>
+        function exibirValor(){
+            const range = document.querySelector(`#inum`).value
+            const ival = document.querySelector(`#ival`)
+            ival.textContent = range
+
+        }
+
+        document.getElementById(`inum`).addEventListener("input", exibirValor)
+    </script>
+</body>
+</html>

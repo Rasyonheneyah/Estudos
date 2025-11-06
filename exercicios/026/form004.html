@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.json" method="get" autocomplete="on">
+
+        <div>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome">
+        </div>
+
+        <div>
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail" required autocomplete="email">
+            <!-- Type Email só verifica se tem um @ no campo de email-->
+        </div>
+
+        <div>
+            <label for="itel">Telefone: </label>
+            <input type="tel" name="tel" id="itel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}" placeholder="(XX) XXXXX-XXXX ">
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+
+
+</body>
+</html>
